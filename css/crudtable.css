@@ -1,0 +1,87 @@
+/*************************************************************************************************/
+/*                  Stylesheet for crud table                                                    */
+/*                  Author: Ruyi Xia Ye                                                          */
+/*                  Version: 1.0                                                                 */
+/*                  Date: January 2024                                                           */
+/*                  Comments: Lenguajes de Marcas project                                        */
+/*************************************************************************************************/
+
+
+/******************************* GENERAL STYLE ***************************************************/
+@font-face {
+    font-family: poppinsbold;
+    src: url(../fonts/Poppins-Bold.ttf);
+}
+
+@font-face {
+    font-family: poppinslight;
+    src: url(../fonts/Poppins-Light.ttf);
+}
+
+body {background-color: #3a0a4a;
+    background-image: url(../img/crudtablebackground.jpg);
+}
+
+#container {width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    height: 100vh;
+}
+
+/********************************* TABLE STYLE ***************************************************/
+caption {padding-bottom: 5%;
+    font-family: poppinsbold;
+    font-size: 2em;
+    color: #FFFFFF;
+}
+
+table {border: 2px solid #FFFFFF;
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+    background: #FFFFFF;
+}
+
+td, th {border: 1px solid #524f4f;
+    padding: 3px 4px;
+}
+
+tbody td {font-size: 1em;
+    font-family: poppinslight;
+}
+
+td:nth-child(even) {background: #EBEBEB;
+}
+
+thead {background: #FFFFFF;
+    border-bottom: 4px solid #333333;
+    font-family: poppinsbold;
+}
+
+thead th {font-size: 15px;
+    font-weight: bold;
+    color: #333333;
+    text-align: center;
+    border-left: 2px solid #333333;
+}
+
+thead th:first-child {border-left: none;
+}
+
+tfoot {font-family: poppinsbold;
+    font-size: 1em;
+    font-weight: bold;
+    color: #333333;
+    border-top: 4px solid #333333;
+    background: #FFFFFF;
+}
+
+tfoot td {font-size: 14px;
+}
+
+tfoot th {border-left: 2px solid #333333;}
+
+tfoot th:first-child {border-left: none;
+}

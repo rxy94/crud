@@ -18,8 +18,12 @@
     src: url(../fonts/Poppins-Light.ttf);
 }
 
+* {box-sizing: border-box;}
+
 body {background-color: #3a0a4a;
     background-image: url(../img/crudtablebackground.jpg);
+    background-position: center;
+    background-size: cover;
 }
 
 #container {width: 80%;
@@ -28,12 +32,13 @@ body {background-color: #3a0a4a;
     align-items: center;
     margin: auto;
     height: 100vh;
+    overflow-x: auto;
 }
 
 /********************************* TABLE STYLE ***************************************************/
 caption {padding-bottom: 5%;
     font-family: poppinsbold;
-    font-size: 2em;
+    font-size: 2.5em;
     color: #FFFFFF;
 }
 
@@ -52,36 +57,71 @@ tbody td {font-size: 1em;
     font-family: poppinslight;
 }
 
-td:nth-child(even) {background: #EBEBEB;
-}
+tbody tr:nth-child(odd) {background: #EBEBEB;}
 
 thead {background: #FFFFFF;
     border-bottom: 4px solid #333333;
-    font-family: poppinsbold;
 }
 
-thead th {font-size: 15px;
-    font-weight: bold;
+tfoot {
+    border-top: 4px solid #333333;
+    background: #FFFFFF;
+}
+
+thead th, tfoot th {font-family: poppinsbold;
+    font-size: 1em;
     color: #333333;
     text-align: center;
     border-left: 2px solid #333333;
 }
 
-thead th:first-child {border-left: none;
+thead th:first-child, tfoot th:first-child {border-left: none;
 }
 
-tfoot {font-family: poppinsbold;
-    font-size: 1em;
-    font-weight: bold;
-    color: #333333;
-    border-top: 4px solid #333333;
-    background: #FFFFFF;
+/*************************************** RESPONSIVE DESIGN ******************************************/
+/******************            RESPONSIVE DESIGN : Mobile phone             *************************/
+@media screen and (max-width: 768px) {
+    
+    body {background-image: url(../img/crudtableresponsivebg.jpg);
+        background-color: #561d41;
+        background-size: cover;
+        height: auto;
+    }
+
+    #container {width: 100%;
+        height: auto;
+    }
+
+    caption {font-size: 1.5em;
+        padding-top: 10%;
+    }
+
+    table {width: 60%;}
+
+    tbody td {font-size: 0.8em;}
+
+    thead th, tfoot th {font-size: 0.8em;}
+
 }
 
-tfoot td {font-size: 14px;
+@media screen and (max-width: 660px) {
+
+    #container {display: block;}
+    
 }
 
-tfoot th {border-left: 2px solid #333333;}
+/******************            RESPONSIVE DESIGN : Tablet              *************************/
 
-tfoot th:first-child {border-left: none;
+@media screen and (max-width:990px) and (min-width:769px) {
+
+    table {width:60%;}
+
+    #container {width: 100%;}
+
+    caption {font-size: 1.7em;}
+
+    tbody td {font-size: 0.9em;}
+
+    thead th, tfoot th {font-size: 0.9em;}
+
 }

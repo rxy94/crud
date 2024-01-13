@@ -21,7 +21,7 @@
 * {box-sizing: border-box;}
 
 body {background-color: #3a0a4a;
-    background-image: url(../img/crudtablebackground.jpg);
+    background-image: url(../img/tablebg.jpg);
     background-position: center;
     background-size: cover;
 }
@@ -82,10 +82,10 @@ thead th:first-child, tfoot th:first-child {border-left: none;
 /******************            RESPONSIVE DESIGN : Mobile phone             *************************/
 @media screen and (max-width: 768px) {
     
-    body {background-image: url(../img/crudtableresponsivebg.jpg);
+    body {background-image: url(../img/tablebgresponsive.jpg);
         background-color: #561d41;
         background-size: cover;
-        height: auto;
+        height: 100vh;
     }
 
     #container {width: 100%;
@@ -107,6 +107,12 @@ thead th:first-child, tfoot th:first-child {border-left: none;
 @media screen and (max-width: 660px) {
 
     #container {display: block;}
+    
+}
+
+@media screen and (max-width: 740px) and (orientation:landscape) {
+
+    #container {padding-bottom: 10%;}
     
 }
 

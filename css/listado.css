@@ -132,7 +132,7 @@ button:focus {transform: translateY(4px);
     body {background-image: url(../img/tablebgresponsive.jpg);
         background-color: #561d41;
         background-size: cover;
-        height: 100vh;
+        height: 110vh;
     }
 
     #container {width: 100%;
@@ -164,9 +164,11 @@ button:focus {transform: translateY(4px);
 
 @media screen and (max-width: 740px) and (orientation:landscape) {
 
+    body {height: 130vh;}
+
     #container {width: 100%;
-        height: auto;
         padding-bottom: 20px;
+        height: auto;
     }
 
     caption {padding-top: 35px;}

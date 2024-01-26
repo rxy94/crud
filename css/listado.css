@@ -28,6 +28,7 @@ body {background-color: #3a0a4a;
 
 #container {width: 80%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     margin: auto;
@@ -75,8 +76,54 @@ thead th, tfoot th {font-family: poppinsbold;
     border-left: 2px solid #333333;
 }
 
-thead th:first-child, tfoot th:first-child {border-left: none;
+thead th:first-child, tfoot th:first-child {border-left: none;}
+
+
+button {border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1em;
+    margin: 2px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
 }
+
+.editbtn {background-color: rgb(127, 163, 241); 
+    padding: 8px 29px;
+    border-radius: 15px;
+    border: 2px solid black;
+    box-shadow: 3px 3px 0px 0px #000
+}
+
+.editbtn:hover {background-color:blue;}
+
+.deletebtn {background-color: rgb(172, 76, 172); 
+    padding: 8px 20px;
+    border-radius: 15px;
+    border: 2px solid black;
+    box-shadow: 3px 3px 0px 0px #000
+}
+
+.deletebtn:hover {background-color: purple;}
+
+.addbtn {background-color: rgb(165, 222, 32);
+    padding: 10px 20px;
+    margin-top: 15px;
+    border-radius: 20px;
+    border: 3px solid rgb(193, 223, 125);
+    box-shadow: 0px 0px 20px white;
+}
+
+.addbtn:hover {background-color: rgb(193, 223, 125);
+    border: 3px solid rgb(165, 222, 32);
+}
+
+button:focus {transform: translateY(4px);
+    box-shadow: 1px 2px 0px 0px #000;
+}
+
 
 /*************************************** RESPONSIVE DESIGN ******************************************/
 /******************            RESPONSIVE DESIGN : Mobile phone             *************************/
@@ -93,14 +140,19 @@ thead th:first-child, tfoot th:first-child {border-left: none;
     }
 
     caption {font-size: 1.5em;
-        padding-top: 10%;
+        padding-top: 45px;
     }
 
-    table {width: 60%;}
+    table {width: 50%;}
 
     tbody td {font-size: 0.8em;}
 
     thead th, tfoot th {font-size: 0.8em;}
+
+    .addbtn {font-size: 0.9em;
+        box-shadow: 0px 0px 10px white;
+        padding: 8px 20px;
+    }
 
 }
 
@@ -112,15 +164,22 @@ thead th:first-child, tfoot th:first-child {border-left: none;
 
 @media screen and (max-width: 740px) and (orientation:landscape) {
 
-    #container {padding-bottom: 10%;}
+    #container {width: 100%;
+        height: auto;
+        padding-bottom: 20px;
+    }
+
+    caption {padding-top: 35px;}
+    
+    .addbtn {font-size: 0.9em;}
     
 }
 
 /******************            RESPONSIVE DESIGN : Tablet              *************************/
 
-@media screen and (max-width:990px) and (min-width:769px) {
+@media screen and (max-width:1113px) and (min-width:769px) {
 
-    table {width:60%;}
+    table {width:55%;}
 
     #container {width: 100%;}
 
@@ -129,5 +188,9 @@ thead th:first-child, tfoot th:first-child {border-left: none;
     tbody td {font-size: 0.9em;}
 
     thead th, tfoot th {font-size: 0.9em;}
+
+    .addbtn {font-size: 0.9em;
+        padding: 8px 18px;
+    }
 
 }

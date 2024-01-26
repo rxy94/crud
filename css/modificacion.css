@@ -1,0 +1,136 @@
+/*************************************************************************************************/
+/*                  Stylesheet for crud modificaton form                                         */
+/*                  Author: Ruyi Xia Ye                                                          */
+/*                  Version: 1.0                                                                 */
+/*                  Date: January 2024                                                           */
+/*                  Comments: Lenguajes de Marcas project                                        */
+/*************************************************************************************************/
+
+/******************************* GENERAL STYLE ***************************************************/
+@font-face {
+    font-family: poppinsbold;
+    src: url(../fonts/Poppins-Bold.ttf);
+}
+
+@font-face {
+    font-family: poppinslight;
+    src: url(../fonts/Poppins-Light.ttf);
+}
+
+* {box-sizing: border-box;}
+
+body {background-color: #3a0a4a;
+    background-image: url(../img/tablebg.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 150vh;
+
+}
+
+.container {display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    padding-top: 5%;
+}
+
+/********************************* INSERTION FORM STYLE ************************************************/
+form {background-color: #fff;
+    width: 70%;
+    min-width: 350px;
+    max-width: 700px;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 3%;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px #da7cf8;
+    border: 3px solid purple;
+    font-size: 1em;
+}
+
+h4 {font-family: poppinsbold;
+    font-size: 2em;
+    color: #a50ad8;
+    text-align: center;
+}
+
+label {font-family: poppinsbold;
+    margin-left: 10px;
+}
+
+span {color:  rgb(172, 245, 1);}
+
+#name {padding-top: 10px;}
+
+.textbox {outline: none;
+    border: 2px solid #000;
+    box-shadow: 3px 4px 0px 1px #000;
+    width: 100%;
+    padding: 12px 10px;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+p {outline: none;
+    border: 2px solid #000;
+    box-shadow: 3px 4px 0px 1px #000;
+    width: 100%;
+    padding: 12px 10px;
+    border-radius: 4px;
+    font-size: 1em;
+    margin-bottom: 20px;
+}
+
+.btn {padding: 12px;
+    width: 100px;
+    font-family: poppinsbold;
+    font-size: 15px;
+    background: #da7cf8;
+    border-radius: 30px;
+    box-shadow: 5px 5px 0px 0px #000;
+    margin-left: 38%;
+    margin-top: 5%;
+}
+
+.btn:hover {background-color: #a50ad8;}
+
+.btn:focus {transform: translateY(4px);
+    box-shadow: 1px 2px 0px 0px #000;
+}
+
+
+
+/*************************************** RESPONSIVE DESIGN ******************************************/
+@media screen and (max-width: 360px) {
+
+    body {height: 150vh;}
+    
+    .container {padding-top: 20%;
+    }
+
+    form {border: 2px solid purple;
+        box-shadow: 0px 0px 15px #da7cf8 ;
+        width: 50%;
+        padding-bottom: 10%;
+    }
+
+    .terminos {font-size: 0.9em;}
+
+    .btn {margin-left: 35%;}
+
+}
+
+@media screen and (max-width: 740px) and (orientation:landscape) {
+
+    body {height: 290vh;}
+
+    .container {padding-top: none;
+        padding-bottom: 5%;
+    }
+
+    form {box-shadow: none;
+        border: 2px solid purple;
+        box-shadow: 0px 0px 15px #da7cf8
+    }
+}

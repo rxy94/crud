@@ -16,20 +16,22 @@
 
             <h4 class="title">LOG IN</h4>
 
-            <form action="">
+            <form id="loginform" action="" method="post" onsubmit="return validateLogin()">
 
                 <div class="formsection"> <!-- div class SECTION para NAME-->
-                    <label for="name" class="subtitle">Name</label>
-                    <input type="text" class="textbox" id="name" placeholder="Enter your full name">
+                    <label for="username" class="subtitle">Username <span>*</span></label>
+                    <input onclick="resetear('username')" type="text" class="textbox" id="username" name="username" placeholder="Enter your username" aria-describedby="usernameHelp" autocomplete="off">
+                    <div id="usernameHelp" class="form-text">Valid username required</div>
                 </div>
 
                 <div class="formsection"> <!-- div class SECTION para PASSWORD-->
-                    <label for="password" class="subtitle">Password</label>
-                    <input type="text" class="textbox" id="password" placeholder="Enter your password">
+                    <label for="password" class="subtitle">Password <span>*</span></label>
+                    <input onclick="resetear('password')" type="password" class="textbox" id="password" name="password" placeholder="Enter your password" aria-describedby="passwordHelp" autocomplete="off">
+                    <div id="passwordHelp" class="form-text">Valid password required</div>
                 </div>
 
                 <div> <!-- div de LOG IN button-->
-                    <button class="btn">LOG IN</button>
+                    <button type="submit" class="btn">LOG IN</button>
                 </div>
 
             </form>
@@ -38,5 +40,6 @@
 
     </div> <!--Fin div class CONTAINER-->
     
+    <script src="./js/crudjs.js"></script>
 </body>
 </html>

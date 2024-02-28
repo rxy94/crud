@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Update form</title>
+    <title>Insertion form</title>
     <link rel="stylesheet" href="./css/modificacion.css">
     <link rel="shortcut icon" href="./img/crudfavicon.png" type="image/x-icon">
 </head>
@@ -12,36 +12,72 @@
 
     <div class="container">
 
-        <form action="" method="post">
-            <h4>UPDATE FORM</h4>
+        <form action="" method="post" onsubmit="return validacion()">
+            <h4>INSERTION FORM</h4>
 
-            <label for="">Full name: <span>*</span></label><br>
-            <p>Iris Clemons</p>
+            <div>
+                <label for="name" class="form-label">Full name: <span>*</span></label>
+                <input onclick="resetear('name')" type="text" class="form-control" id="name" name="name" value="Iris Clemons" aria-describedby="nameHelp">
+                <div id="nameHelp" class="form-text">Valid full name required</div>
+            </div>
 
-            <label for="">ID: <span>*</span></label><br>
-            <p>11111111-A</p>
+            <div>
+                <label for="idnumber" class="form-label">ID: <span>*</span></label>
+                <input onclick="resetear('idnumber')" type="text" class="form-control" id="idnumber" name="idnumber" value="12654967A" aria-describedby="idnumberHelp">
+                <div id="idnumberHelp" class="form-text">Valid id number required</div>
+            </div>
             
-            <label for="">Phone: <span>*</span></label><br>
-            <p>1-624-462-7525</p>
+            <div>
+                <label for="phone" class="form-label">Phone: <span>*</span></label>
+                <input onclick="resetear('phone')" type="text" class="form-control" id="phone" name="phone" value="+44908320396" aria-describedby="phoneHelp">
+                <div id="phoneHelp" class="form-text">Valid phone format required</div>
+            </div>
 
-            <label for="">Address: <span>*</span></label><br>
-            <p>Ap #135-2386 Magna. Av.</p>
+            <div>
+                <label for="email" class="form-label">Email: <span>*</span></label>
+                <input onclick="resetear('email')" type="text" class="form-control" id="email"  name="email" value="augue@google.com" aria-describedby="emailHelp">
+                <div id="emailHelp" class="form-text">Valid email format required</div>
+            </div>
 
-            <label for="">Email: <span>*</span></label><br>
-            <p>augue@google.com</p>
+            <div>
+                <label for="fechaIn" class="form-label">Date: <span>*</span></label>
+                <input onclick="resetear('fechaIn')" type="date" class="form-control" id="fechaIn" name="fechaIn" aria-describedby="fechaInHelp">
+                <div id="fechaInHelp" class="form-text">Mandatory field</div>
+            </div> <br>
 
-            <label for="">Date: <span>*</span></label> <br>
-            <p>26/01/2024</p>
+            <div>
+                <label for="ticketclass" class="form-label">Ticket class: <span>*</span></label>
+                <select onclick="resetear('ticketclass')"  id="ticketclass" name="ticketclass" aria-describedby="Default value selected">
+                    <option value="0">--Choose your option</option>
+                    <option value="general">General</option>
+                    <option value="vip" selected>VIP</option>
+                    <option value="invited">Invited</option>
+                </select>
+                <div id="ticketclassHelp" class="form-text">Mandatory field</div>
+            </div>
 
-            <label for="comentarios">Comentarios: </label><br>
-            <textarea></textarea><br><br>
+            <div>
+                <label for="gender">Gender (optional): </label><br>
+                <input type="radio" name="gender" id="male" value="male"><a>Male</a>
+                <input type="radio" name="gender" id="female" value="female"><a>Female</a>
+                <input type="radio" name="gender" id="other" value="other"><a>Other</a>
+                <div id="genderHelp"></div>
+            </div> <br>
 
-            <input type="checkbox" name="terminos" class="terminos" required> <label class="terminos"><a href="">Acepto los términos y condiciones</a></label><br>
+            <div>
+                <input onclick="resetear('terms')"  type="checkbox" class="form-check-input" id="terms" name="terms" checked> 
+                <label for="terms" class="form-check-label"><a>I accept the Terms & Conditions</a></label>
+                <div id="termsHelp" class="form-text">Mandatory field</div>
+            </div> <br>
 
-            <button type="submit" class="btn">Save</button>
+            <button type="submit" class="btn">Send</button>
+
         </form>
 
     </div>
 
+    <script src="./js/crudjs.js"></script>
+
 </body>
+
 </html>

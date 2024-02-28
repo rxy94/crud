@@ -1,5 +1,5 @@
 /*************************************************************************************************/
-/*                  Stylesheet for crud modificaton form                                         */
+/*                  Stylesheet for crud Update form                                              */
 /*                  Author: Ruyi Xia Ye                                                          */
 /*                  Version: 1.0                                                                 */
 /*                  Date: January 2024                                                           */
@@ -23,7 +23,7 @@ body {background-color: #3a0a4a;
     background-image: url(../img/tablebg.jpg);
     background-position: center;
     background-size: cover;
-    height: 150vh;
+    height: 160vh;
 
 }
 
@@ -47,6 +47,14 @@ form {background-color: #fff;
     box-shadow: 0px 0px 20px #da7cf8;
     border: 3px solid purple;
     font-size: 1em;
+    margin-bottom: 5%;
+}
+
+.form-text {font-family: poppinsbold;
+    margin-bottom: 15px;
+    margin-left: 10px;
+    color:#a50ad8;
+    visibility: hidden;
 }
 
 h4 {font-family: poppinsbold;
@@ -61,25 +69,25 @@ label {font-family: poppinsbold;
 
 span {color:  rgb(172, 245, 1);}
 
+input {margin-bottom: 15px;}
+
 #name {padding-top: 10px;}
 
-.textbox {outline: none;
-    border: 2px solid #000;
-    box-shadow: 3px 4px 0px 1px #000;
-    width: 100%;
-    padding: 12px 10px;
-    border-radius: 4px;
-    font-size: 1em;
-}
+#ticketclass {margin-right: 10px;
+    font-family: poppinslight;}
 
-p {outline: none;
+#male, #female, #other {margin-top: 20px;
+    margin-left: 20px;}
+
+a {font-family: poppinslight;}
+
+.form-control {outline: none;
     border: 2px solid #000;
     box-shadow: 3px 4px 0px 1px #000;
     width: 100%;
     padding: 12px 10px;
     border-radius: 4px;
     font-size: 1em;
-    margin-bottom: 20px;
 }
 
 .btn {padding: 12px;
@@ -90,15 +98,13 @@ p {outline: none;
     border-radius: 30px;
     box-shadow: 5px 5px 0px 0px #000;
     margin-left: 38%;
-    margin-top: 5%;
 }
 
 .btn:hover {background-color: #a50ad8;}
 
-.btn:focus {transform: translateY(4px);
+.textbox:focus, .btn:focus {transform: translateY(4px);
     box-shadow: 1px 2px 0px 0px #000;
 }
-
 
 
 /*************************************** RESPONSIVE DESIGN ******************************************/
@@ -119,11 +125,12 @@ p {outline: none;
 
     .btn {margin-left: 35%;}
 
+
 }
 
 @media screen and (max-width: 740px) and (orientation:landscape) {
 
-    body {height: 290vh;}
+    body {height: 340vh;}
 
     .container {padding-top: none;
         padding-bottom: 5%;
@@ -133,4 +140,5 @@ p {outline: none;
         border: 2px solid purple;
         box-shadow: 0px 0px 15px #da7cf8
     }
+
 }

@@ -27,17 +27,14 @@ body {background-color: #3a0a4a;
 }
 
 #container {width: 80%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     margin: auto;
-    height: 100vh;
+    height: 130vh;
     overflow-x: auto;
 }
 
 /********************************* TABLE STYLE ***************************************************/
 caption {padding-bottom: 5%;
+    padding-top: 10%;
     font-family: poppinsbold;
     font-size: 2.5em;
     color: #FFFFFF;
@@ -91,10 +88,13 @@ button {border: none;
 }
 
 .editbtn {background-color: rgb(127, 163, 241); 
-    padding: 8px 29px;
+    padding: 6px 29px;
     border-radius: 15px;
     border: 2px solid black;
-    box-shadow: 3px 3px 0px 0px #000
+    box-shadow: 3px 3px 0px 0px #000;
+    color: white;
+    text-decoration: none;
+    font-family: poppinslight;
 }
 
 .editbtn:hover {background-color:blue;}
@@ -114,6 +114,10 @@ button {border: none;
     border-radius: 20px;
     border: 3px solid rgb(193, 223, 125);
     box-shadow: 0px 0px 20px white;
+    text-decoration: none;
+    font-family: poppinslight;
+    color: white;
+    display: inline-block;
 }
 
 .addbtn:hover {background-color: rgb(193, 223, 125);
@@ -154,6 +158,10 @@ button:focus {transform: translateY(4px);
         padding: 8px 20px;
     }
 
+    .editbtn {padding: 2px 27px;}
+
+    .deletebtn{padding: 5px 20px;}
+
 }
 
 @media screen and (max-width: 660px) {
@@ -183,7 +191,9 @@ button:focus {transform: translateY(4px);
 
     table {width:55%;}
 
-    #container {width: 100%;}
+    #container {width: 100%;
+        margin-left: 15%;
+        height: 130hv;}
 
     caption {font-size: 1.7em;}
 

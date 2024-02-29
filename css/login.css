@@ -104,6 +104,10 @@ span {color:  rgb(172, 245, 1);}
     box-shadow: 5px 5px 0px 0px #000;
 }
 
+a {font-family: poppinsbold;
+    color: white;
+    text-decoration: none;}
+
 /*************************************** RESPONSIVE DESIGN ******************************************/
 @media screen and (max-width: 360px) {
     

@@ -10,35 +10,41 @@
 
 <body>
 
-    <div class="container"> <!--Principio div class CONTAINER-->
+    <div class="container">
 
-        <div class="form"> <!--Principio div class FORM-->
-
+        <div class="form">
             <h4 class="title">LOG IN</h4>
-
+            
+            <!--Login Form-->
             <form id="loginform" action="" method="post" onsubmit="return validateLogin()">
 
-                <div class="formsection"> <!-- div class SECTION para NAME-->
+                <!-- Username Field-->
+                <div class="formsection"> 
                     <label for="username" class="subtitle">Username <span>*</span></label>
                     <input onclick="resetear('username')" type="text" class="textbox" id="username" name="username" placeholder="Enter your username" aria-describedby="usernameHelp" autocomplete="off">
                     <div id="usernameHelp" class="form-text">Valid username required</div>
                 </div>
 
-                <div class="formsection"> <!-- div class SECTION para PASSWORD-->
+                <!-- Password Field-->
+                <div class="formsection"> 
                     <label for="password" class="subtitle">Password <span>*</span></label>
                     <input onclick="resetear('password')" type="password" class="textbox" id="password" name="password" placeholder="Enter your password" aria-describedby="passwordHelp" autocomplete="off">
                     <div id="passwordHelp" class="form-text">Valid password required</div>
                 </div>
 
-                <div> <!-- div de LOG IN button-->
-                    <button type="submit" class="btn">LOG IN</button>
+                <div>
+                    <!--Si se pulsa justo encima de las letras LOG IN redirige al fichero Listado-->
+                    <!--Si se pulsa el botón donde no sea LOG IN realiza la validación de los campos-->
+                    <button type="submit" class="btn">
+                        <a href="./listado.html" target="_blank">LOG IN</a>
+                    </button>
                 </div>
 
             </form>
 
-        </div> <!--Fin div class FORM-->
+        </div>
 
-    </div> <!--Fin div class CONTAINER-->
+    </div>
     
     <script src="./js/crudjs.js"></script>
 </body>

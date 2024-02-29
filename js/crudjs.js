@@ -12,7 +12,9 @@ function validateLogin() {
     let valid = true;
     const username = document.getElementById("username").value;
     const password = document.getElementById("password").value;
-    const usernameRegex = /^[a-z0-9_]{8,12}$/;
+    const usernameRegex = /^[a-zA-Z0-9_-]{8,12}$/;
+
+
     const passwordRegex = /(?=(.*[0-9]))(?=.*[\!@#$%^&*()\\[\]{}\-_+=|:;"'<>,./?])(?=.*[a-z])(?=(.*[A-Z]))(?=(.*)).{8,15}/ ;
 
     if (username == ""  || !usernameRegex.test(username)) {

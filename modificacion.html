@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Insertion form</title>
+    <title>Update form</title>
     <link rel="stylesheet" href="./css/modificacion.css">
     <link rel="shortcut icon" href="./img/crudfavicon.png" type="image/x-icon">
 </head>
@@ -13,7 +13,7 @@
     <div class="container">
 
         <form action="" method="post" onsubmit="return validacion()">
-            <h4>INSERTION FORM</h4>
+            <h4>UPDATE FORM</h4>
 
             <div>
                 <label for="name" class="form-label">Full name: <span>*</span></label>
@@ -62,12 +62,6 @@
                 <input type="radio" name="gender" id="female" value="female"><a>Female</a>
                 <input type="radio" name="gender" id="other" value="other"><a>Other</a>
                 <div id="genderHelp"></div>
-            </div> <br>
-
-            <div>
-                <input onclick="resetear('terms')"  type="checkbox" class="form-check-input" id="terms" name="terms" checked> 
-                <label for="terms" class="form-check-label"><a>I accept the Terms & Conditions</a></label>
-                <div id="termsHelp" class="form-text">Mandatory field</div>
             </div> <br>
 
             <button type="submit" class="btn">Send</button>

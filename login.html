@@ -22,21 +22,30 @@
                 <div class="formsection"> 
                     <label for="username" class="subtitle">Username <span>*</span></label>
                     <input onclick="resetear('username')" type="text" class="textbox" id="username" name="username" placeholder="Enter your username" aria-describedby="usernameHelp" autocomplete="off">
-                    <div id="usernameHelp" class="form-text">Valid username required</div>
+                    <div id="usernameHelp" class="form-text">
+                        <p>Valid username required</p>
+                        <div class="popup" onclick="myPopUp1()">+ Click for more info
+                            <span class="popuptext" id="myPopup">A username shoud have between 8 to 12 characters, including letters, numbers, and underscores</span>
+                        </div>
+                    </div>
                 </div>
 
                 <!-- Password Field-->
                 <div class="formsection"> 
                     <label for="password" class="subtitle">Password <span>*</span></label>
                     <input onclick="resetear('password')" type="password" class="textbox" id="password" name="password" placeholder="Enter your password" aria-describedby="passwordHelp" autocomplete="off">
-                    <div id="passwordHelp" class="form-text">Valid password required</div>
+                    <div id="passwordHelp" class="form-text">
+                    <p>Valid password required</p>
+                        <div class="popup" onclick="myPopUp2()">+ Click for more info
+                            <span class="popuptext" id="myPopup2">A password shoud have between 8 to 15 characters, including lowercase and uppercase letters, numbers, and special characters</span>
+                        </div>
+                    </div>
                 </div>
 
                 <div>
-                    <!--Si se pulsa justo encima de las letras LOG IN redirige al fichero Listado-->
-                    <!--Si se pulsa el botón donde no sea LOG IN realiza la validación de los campos-->
+
                     <button type="submit" class="btn">
-                        <a href="./listado.html" target="_blank">LOG IN</a>
+                        LOG IN
                     </button>
                 </div>
 

@@ -18,14 +18,12 @@ function validateLogin() {
     const passwordRegex = /(?=(.*[0-9]))(?=.*[\!@#$%^&*()\\[\]{}\-_+=|:;"'<>,./?])(?=.*[a-z])(?=(.*[A-Z]))(?=(.*)).{8,15}/ ;
 
     if (username == ""  || !usernameRegex.test(username)) {
-        alert("Invalid username. A username should have between 8 and 12 characters, using letters, numbers, and underscores.");
         document.getElementById('usernameHelp').style.visibility = "visible";
         document.getElementById('username').style.borderColor="lightblue";
         valid = false;
     }
 
     if (password == "" || !passwordRegex.test(password)) {
-        alert("Invalid password. A strong password should have between 8 and 15 characters, including one lowercase letter, one uppercase letter, one number, and one special character.");
         document.getElementById('passwordHelp').style.visibility="visible";
         document.getElementById('password').style.borderColor="lightblue";
         valid = false;
@@ -89,13 +87,6 @@ function validacion() {
         document.getElementById('ticketclass').style.borderColor="lightblue";
         valid = false;
     }
-    
-
-    if(!terms.checked) { 
-        document.getElementById('termsHelp').style.visibility = "visible" ;
-        document.getElementById('terms').style.borderColor="lightblue";
-        valid = false;
-    }
 
     return valid;
 
@@ -117,4 +108,15 @@ function myFunction() {
 //Función para el formulario de edición
 function saveChanges() {
     confirm("Are you sure you want to save these changes?");
+}
+
+//Funciones para ventana pop up del Login
+function myPopUp1() {
+    var popup = document.getElementById("myPopup");
+    popup.classList.toggle("show");
+}
+
+function myPopUp2() {
+    var popup = document.getElementById("myPopup2");
+    popup.classList.toggle("show");
 }

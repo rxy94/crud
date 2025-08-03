@@ -1,17 +1,35 @@
-<h1>Memoria del proyecto CRUD de la 2ª evaluación de Lenguajes de Marcas</h1>
+# Proyecto CRUD
 
-<h2>Contenidos:</h2>
-<ul>
-  <li>Login (HTML y CSS)</li>
-  <li>Listado - tabla (HTML y CSS)</li>
-  <li>Formulario de inserción (HTML y CSS)</li>
-  <li>Formularo de edición (HTML y CSS)</li>
-</ul>
+Este proyecto es una aplicación web sencilla que implementa operaciones CRUD (Crear, Leer, Actualizar y Eliminar) utilizando **HTML**, **CSS** y **JavaScript**. El objetivo es gestionar tablas y formularios de manera dinámica, permitiendo al usuario interactuar con los datos de forma intuitiva.
 
-<h2>Fichero JavaScript:</h2>
-<p>Uso de expresiones regulares para la validación de campos en el login, y los formularios de inserción y edición.</p>
+## Características
 
-<h2>Créditos:</h2>
+- Añadir, editar y eliminar registros en una tabla.
+- Interfaz amigable y responsiva.
+- Validación básica de formularios.
+- Código estructurado y comentado para facilitar su comprensión.
+
+## Tecnologías utilizadas
+
+- **HTML**: estructura principal de la aplicación.
+- **CSS**: estilos y diseño visual.
+- **JavaScript**: lógica de la aplicación y manipulación del DOM.
+
+## Secciones
+
+**Login**
+<img width="1907" height="996" alt="Captura de pantalla 2025-08-03 184723" src="https://github.com/user-attachments/assets/ced17441-c50b-45a9-b2cb-1a211f85a6ec" />
+
+**Listado(Read)**
+<img width="1887" height="905" alt="Captura de pantalla 2025-08-03 184621" src="https://github.com/user-attachments/assets/a23360c7-a879-44a4-a57a-e974f3130abf" />
+
+**Añadir(Create)** <br/>
+<img width="774" height="865" alt="Captura de pantalla 2025-08-03 184838" src="https://github.com/user-attachments/assets/0da42b60-9a8e-4e74-94f4-d818e14b516b" />
+
+**Actualizar(Update)** <br/>
+<img width="665" height="795" alt="Captura de pantalla 2025-08-03 184948" src="https://github.com/user-attachments/assets/88d0d934-fe3a-489c-a975-9fd5f7d3b141" />
+
+## Créditos
 <p>Freepik:</p>
 <ul>
   <li><a href="https://www.freepik.es/vector-gratis/fondo-niebla-dinamica-realista_18777701.htm#query=neon%20smoke&position=0&from_view=search&track=ais&uuid=d1d2d51a-c207-41aa-8b60-4cb6ee814bbf" target="_blank">Imagen 1</a></li>
@@ -27,3 +45,6 @@
 <ul>
   <li>Listado code snippet - <a href="https://divtable.com/table-styler/" target="_blank">link</a></li>
 </ul>
+
+## Autora
+[rxy94](https://github.com/rxy94)
